@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(238, 238, 238);
+}
+
+header {
+  /* background-color: lightcoral; */
+  height: 5rem;
+}
+
+.titlebar {
+  height: 50%;
+  /* outline: 2px solid blue;
+  background-color: gold; */
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.title-img {
+  height: 60%;
+  margin-left: 1rem;
+}
+
+.title {
+  font-size: 1rem;
+}
+
+.menu-bar {
+  display: flex;
+  gap: 1rem;
+  margin-left: 1rem;
+  align-items: center;
+  height: 50%;
+}
+
+.menu {
+  position: relative;
+}
+
+.videoInput {
+  display: none;
+}
+
+.menu-btn {
+  padding: 0.25rem;
+}
+
+.menu:hover .menu-items {
+  display: block;
+}
+
+.menu-btn:hover {
+  background-color: lightblue;
+}
+
+.menu-items {
+  display: none;
+  background-color: rgb(238, 238, 238);
+  position: absolute;
+  top: 1.8rem;
+  width: 7rem;
+}
+
+.menu-items li:hover {
+  background-color: rgb(150, 150, 150);
+}
+
+li {
+  padding: 0.25rem;
+}
+
+/* Main */
+
+main {
+  background-color: black;
+  height: calc(100vh - 10rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  height: 100%;
+}
+
+.toast {
+  color: white;
+  position: fixed;
+  top: 6rem;
+  right: 1rem;
+  display: none;
+}
+
+/* Footer */
+footer {
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+
+  /* background-color: yellowgreen; */
+}
+
+.info {
+  display: flex;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+  column-gap: 1.5rem;
+}
+
+.info input {
+  width: 80%;
+}
+
+.controls {
+  display: flex;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+  /* margin: 0 1rem; */
+  column-gap: 1.5rem;
+}
+
+.controls i {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
